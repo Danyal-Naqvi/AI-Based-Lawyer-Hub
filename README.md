@@ -1,7 +1,6 @@
 # AI-Based Lawyer Hub
 
-![AI Lawyer Hub](<img width="1536" height="1024" alt="ChatGPT Image Jun 28, 2026, 11_19_50 PM" src="https://github.com/user-attachments/assets/07e99b2a-1832-40c2-a5a9-7fba5a92abc3" />
-)
+
 
 AI-Based Lawyer Hub is a full‑stack legal technology platform that combines Artificial Intelligence, Retrieval‑Augmented Generation (RAG), and modern web & mobile development to deliver an intelligent legal assistant, lawyer discovery, appointment management, and a digital legal library.
 
@@ -69,7 +68,8 @@ This repository serves as the central hub for the project: it contains the proje
 
 ## Architecture
 
-![Architecture](https://github.com/user-attachments/assets/d9c9b611-7201-477c-97ba-17278f587d10)
+![Architecture](<img width="926" height="615" alt="image" src="https://github.com/user-attachments/assets/441f916c-f8af-44f8-b07f-94d4d859202d" />
+)
 
 The platform is composed of mobile clients (for users and lawyers), core and admin backends, and a dedicated Legal RAG AI service for document processing and semantic retrieval.
 
