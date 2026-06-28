@@ -68,7 +68,7 @@ This repository serves as the central hub for the project: it contains the proje
 
 ## Architecture
 
-![Architecture] (<img width="926" height="615" alt="image" src="https://github.com/user-attachments/assets/441f916c-f8af-44f8-b07f-94d4d859202d" />)
+![Architecture] <img width="926" height="615" alt="image" src="https://github.com/user-attachments/assets/441f916c-f8af-44f8-b07f-94d4d859202d" />
 
 The platform is composed of mobile clients (for users and lawyers), core and admin backends, and a dedicated Legal RAG AI service for document processing and semantic retrieval.
 
