@@ -126,12 +126,12 @@ Backend & Infrastructure
 
 
 Component	Repository
-User Mobile App: (https://github.com/Danyal-Naqvi/Mobile-LawyerHub-Client)
-Lawyer Mobile App: (https://github.com/Danyal-Naqvi/Mobile-LawyerHub-Lawyer)
-Mobile Backend:	(https://github.com/Danyal-Naqvi/lawyerhub-nodejs-backend)
-Admin Panel: (https://github.com/Danyal-Naqvi/Admin-Frontend-Lawyerhub)
-Admin Backend: (https://github.com/Danyal-Naqvi/Admin-Backend-Lawyerhub-)
-Legal RAG Service: (https://github.com/Danyal-Naqvi/Pakistan-Legal-RAG)
+User Mobile App(https://github.com/Danyal-Naqvi/Mobile-LawyerHub-Client)
+Lawyer Mobile App(https://github.com/Danyal-Naqvi/Mobile-LawyerHub-Lawyer)
+Mobile Backend(https://github.com/Danyal-Naqvi/lawyerhub-nodejs-backend)
+Admin Panel(https://github.com/Danyal-Naqvi/Admin-Frontend-Lawyerhub)
+Admin Backend(https://github.com/Danyal-Naqvi/Admin-Backend-Lawyerhub-)
+Legal RAG Service(https://github.com/Danyal-Naqvi/Pakistan-Legal-RAG)
 
 Architecture
 <img width="943" height="734" alt="image" src="https://github.com/user-attachments/assets/d9c9b611-7201-477c-97ba-17278f587d10" />
