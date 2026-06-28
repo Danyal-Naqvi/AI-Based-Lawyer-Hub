@@ -1,154 +1,140 @@
-AI-Based Lawyer Hub is a full-stack legal technology platform that combines Artificial Intelligence, Retrieval-Augmented Generation (RAG), and modern web/mobile development to provide intelligent legal assistance and digital legal services.
+# AI-Based Lawyer Hub
 
-This repository serves as the central hub for the entire project. It contains the project overview, system architecture, documentation, setup instructions, and links to all individual repositories that make up the platform.
-Project Components
+![AI Lawyer Hub](https://github.com/user-attachments/assets/11b2a9ab-3758-4fe5-9a04-9fbd359e4aec)
 
-The AI-Based Lawyer Hub ecosystem consists of the following interconnected applications and services:
+AI-Based Lawyer Hub is a full‑stack legal technology platform that combines Artificial Intelligence, Retrieval‑Augmented Generation (RAG), and modern web & mobile development to deliver an intelligent legal assistant, lawyer discovery, appointment management, and a digital legal library.
 
-Client Mobile Application (React Native):
-Provides an AI-powered legal assistant, lawyer directory, appointment scheduling, real-time chat, document sharing, digital law library, AI-assisted legal document filling, and client profile management.
+This repository serves as the central hub for the project: it contains the project overview, system architecture diagrams, documentation, setup notes, and links to each component repository.
 
-Lawyer Mobile Application (React Native):
-Enables lawyers to manage appointments, publish availability, communicate with clients, complete KYC verification, respond to reviews, and maintain professional profiles.
+---
 
-Core Backend (Node.js & Express.js):
-Acts as the primary API server, handling authentication, authorization, user management, appointment scheduling, chat services, document management, notifications, reviews, and integration with AI services.
+## Table of Contents
 
-Admin Dashboard (React):
-Provides administrators with a centralized interface to manage users, verify lawyers, maintain the digital law library, monitor platform activities, and configure notification templates.
+- [Key Features](#key-features)
+- [Technology Stack](#technology-stack)
+- [Architecture](#architecture)
+- [Project Components](#project-components)
+- [Quickstart](#quickstart)
+- [Contributing](#contributing)
+- [Screenshots](#screenshots)
+- [License](#license)
 
-Admin Backend (Node.js & Express.js):
-Supports administrative operations by exposing secure APIs for user management, lawyer verification, content management, analytics, and system administration.
+---
 
-Legal RAG Service (Python):
-Implements a Retrieval-Augmented Generation (RAG) pipeline that processes legal documents using OCR and PDF extraction, performs intelligent chunking and embedding generation, retrieves relevant legal context from a vector database, and generates context-aware legal responses using Large Language Models (LLMs).
+## Key Features
 
-Technology Stack
-Mobile:
-React Native
-Expo
-Backend:
-Node.js
-Express.js
-MongoDB
-AI /RAG:
-Python
-FAISS Vector Database
-OCR
-PDF Processing(pdfPlumber)
-Sentence transformer via Huggingface
-Admin
-React.js
-Node.js
+- Authentication & User Management
+  - Secure email registration and verification
+  - Login, logout, session management, password reset
+  - Role-based profiles for clients and lawyers
+- AI-Powered Legal Assistant
+  - Conversational question answering using LLMs
+  - Retrieval‑Augmented Generation (RAG) for context-aware answers
+  - Citation support on request and conversation history
+  - AI-assisted guided form/document filling
+- Lawyer Discovery & Consultation
+  - Search and filter lawyers by specialization, rating, and verification
+  - Detailed lawyer profiles and verified (KYC) badges
+- Appointment Management
+  - Real-time booking, scheduling, confirmation, rescheduling, and cancellation
+  - Lawyer availability management and history tracking
+- Real-Time Communication
+  - Secure client–lawyer messaging with file & image sharing
+  - Chat history and media attachments
+- Reviews & Ratings
+  - Client ratings, reviews and lawyer responses
+  - Automatic aggregation of ratings
+- Digital Legal Library
+  - Browse, search, and download legal resources
+  - Category-based filtering
+- Admin & KYC Workflows
+  - Admin dashboard for user and content management
+  - Lawyer identity and license verification workflow
+- Legal RAG Pipeline
+  - OCR and PDF extraction (pdfPlumber), intelligent chunking
+  - Embedding generation and FAISS vector indexing
+  - Semantic retrieval and LLM-driven response generation
 
-Features:
+---
 
-Authentication & User Management
+## Technology Stack
 
-* Secure email-based registration with email verification
-* Login, logout, and session management
-* Password reset via email
-* Profile management for clients and lawyers
-* Secure account deletion
+- Mobile: React Native, Expo
+- Backend: Node.js, Express.js, MongoDB
+- AI / RAG: Python, FAISS vector DB, OCR, pdfPlumber, Hugging Face sentence transformers
+- Admin: React.js, Node.js
 
-AI-Powered Legal Assistant
+---
 
-* Conversational legal question answering using LLMs
-* Retrieval-Augmented Generation (RAG) for context-aware responses
-* Citation support on request
-* AI-assisted legal document filling guidance
-* Conversation history management
+## Architecture
 
-Lawyer Discovery & Consultation
+![Architecture](https://github.com/user-attachments/assets/d9c9b611-7201-477c-97ba-17278f587d10)
 
-* Search lawyers by name and specialization
-* Filter lawyers by ratings and verification status
-* View detailed lawyer profiles
-* Verified lawyer badges (KYC)
+The platform is composed of mobile clients (for users and lawyers), core and admin backends, and a dedicated Legal RAG AI service for document processing and semantic retrieval.
 
-Appointment Management
+---
 
-* Real-time appointment booking
-* Lawyer availability scheduling
-* Appointment confirmation and rejection
-* Appointment rescheduling and cancellation
-* Appointment history and status tracking
+## Project Components
 
-Real-Time Communication
+- User Mobile App (Client): https://github.com/Danyal-Naqvi/Mobile-LawyerHub-Client
+- Lawyer Mobile App: https://github.com/Danyal-Naqvi/Mobile-LawyerHub-Lawyer
+- Mobile Backend: https://github.com/Danyal-Naqvi/lawyerhub-nodejs-backend
+- Admin Panel: https://github.com/Danyal-Naqvi/Admin-Frontend-Lawyerhub
+- Admin Backend: https://github.com/Danyal-Naqvi/Admin-Backend-Lawyerhub-
+- Legal RAG Service: https://github.com/Danyal-Naqvi/Pakistan-Legal-RAG
 
-* Secure client-lawyer messaging
-* Document and image sharing
-* Chat history management
+> Note: Each component has its own README with setup and run instructions. Follow those links for per-service details.
 
-Review & Rating System
+---
 
-* Client ratings and reviews
-* Lawyer replies to reviews
-* Automatic rating aggregation
+## Quickstart (developer)
 
-Digital Legal Library
+1. Clone the component you want to work on (for example the mobile backend):
 
-* Browse and search legal books
-* Download legal resources
-* Category-based filtering
+   git clone https://github.com/Danyal-Naqvi/lawyerhub-nodejs-backend.git
 
-Lawyer Verification (KYC)
+2. Follow the README in that repository for environment variables, database setup (MongoDB), and any API keys required for AI services.
 
-* Identity and license document submission
-* Admin review and approval workflow
-* Verified lawyer status management
+3. For the Legal RAG service: ensure Python, virtualenv, and required packages are installed, and configure the FAISS vector store and embedding model (Hugging Face).
 
-Administrative Dashboard
+---
 
-* User and lawyer management
-* Lawyer verification approval
-* Book and document catalog management
-* Notification template management
-* Platform monitoring and administration
+## Contributing
 
- Legal RAG Pipeline
+Contributions, bug reports, and feature requests are welcome. To contribute:
 
-* OCR and PDF text extraction
-* Intelligent document preprocessing
-* Embedding generation
-* Vector database indexing
-* Semantic retrieval
-* Context-aware response generation using Large Language Models (LLMs)
+1. Fork the target component repository.
+2. Create a feature branch: git checkout -b feat/your-feature
+3. Commit your changes and open a PR with a clear description and screenshots if applicable.
 
-Backend & Infrastructure
+Please follow the code style and testing guidelines in each component repository.
 
-* RESTful API architecture
-* JWT-based authentication
-* Role-based access control
-* Secure file upload and storage
-* Modular architecture
-* Scalable AI service integration
+---
 
+## Screenshots
 
-Component	Repository
+![Screenshot 1](https://github.com/user-attachments/assets/dd18f80f-74ce-440f-835c-f34f5983aab3)
 
- User Mobile App    (https://github.com/Danyal-Naqvi/Mobile-LawyerHub-Client)
-Lawyer Mobile App   (https://github.com/Danyal-Naqvi/Mobile-LawyerHub-Lawyer)
-Mobile Backend      (https://github.com/Danyal-Naqvi/lawyerhub-nodejs-backend)
-Admin Panel         (https://github.com/Danyal-Naqvi/Admin-Frontend-Lawyerhub)
-Admin Backend       (https://github.com/Danyal-Naqvi/Admin-Backend-Lawyerhub-)
-Legal RAG Service   (https://github.com/Danyal-Naqvi/Pakistan-Legal-RAG)
+![Screenshot 2](https://github.com/user-attachments/assets/63447189-40b1-412a-bbe1-54d079c0a9cc)
 
-Architecture
-<img width="943" height="734" alt="image" src="https://github.com/user-attachments/assets/d9c9b611-7201-477c-97ba-17278f587d10" />
+![Screenshot 3](https://github.com/user-attachments/assets/0c88b91a-6aa0-44e2-b275-1df42a829323)
 
-Screenshots:
-<img width="301" height="492" alt="image" src="https://github.com/user-attachments/assets/dd18f80f-74ce-440f-835c-f34f5983aab3" />
-<img width="298" height="516" alt="image" src="https://github.com/user-attachments/assets/63447189-40b1-412a-bbe1-54d079c0a9cc" />
-<img width="264" height="524" alt="image" src="https://github.com/user-attachments/assets/0c88b91a-6aa0-44e2-b275-1df42a829323" />
-<img width="246" height="500" alt="image" src="https://github.com/user-attachments/assets/bbbea1f7-490f-44b9-9f57-51d134b545c8" />
-<img width="910" height="404" alt="image" src="https://github.com/user-attachments/assets/11b2a9ab-3758-4fe5-9a04-9fbd359e4aec" />
-<img width="292" height="611" alt="image" src="https://github.com/user-attachments/assets/082ed0b7-43f3-47e4-9b27-bdb34340f608" />
-<img width="241" height="536" alt="image" src="https://github.com/user-attachments/assets/ae48e0bc-c2d9-40b9-965e-088649b95191" />
-<img width="234" height="477" alt="image" src="https://github.com/user-attachments/assets/361f9612-11f7-40e9-987f-4324a2ddacce" />
+![Screenshot 4](https://github.com/user-attachments/assets/bbbea1f7-490f-44b9-9f57-51d134b545c8)
 
+![Screenshot 5](https://github.com/user-attachments/assets/11b2a9ab-3758-4fe5-9a04-9fbd359e4aec)
 
+![Screenshot 6](https://github.com/user-attachments/assets/082ed0b7-43f3-47e4-9b27-bdb34340f608)
 
+![Screenshot 7](https://github.com/user-attachments/assets/ae48e0bc-c2d9-40b9-965e-088649b95191)
 
+![Screenshot 8](https://github.com/user-attachments/assets/361f9612-11f7-40e9-987f-4324a2ddacce)
 
+---
 
+## License
+
+This repository is provided under the MIT License. See LICENSE file in the component repositories for details.
+
+---
+
+If you'd like further styling (badges for builds/coverage, a demo GIF, or a shorter one-page README) tell me which elements you prefer and I will update it.
